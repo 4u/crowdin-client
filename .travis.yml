@@ -16,9 +16,8 @@ script:
 - npm run build
 deploy:
 - provider: npm
-  email: max@rururu.me
+  email: $NPM_USER
   skip_cleanup: true
   on:
     branch: master
-  api_key:
-    secure: wkTtdrlRVKFdXrlpmi1ZJ5Sdf/pNQxzX+koZX4OZQhj3Jf6VpxtDwy0kJl5iScL4Ds3QYkAJyKgq+EHkSYQv0GQlog9tGxxgDznDZDXTrd9eoOmxK/RhfUwvpWUxzqetU1hEcmKRgIwmIqF+ttGAsoTt1KPqF8HOtl0O16mIzxoABP9QOtwyJGI9Su7StRgR+UoQlPPue0Dj0zWbp+VWluMjAnPibWMdmlFzNdALGVhN6V21duvQ/Pbtg6aWqBu68Ag/vn/1EqYAyTV6b/8GxVOx7LtdyUlO9uF4ESjltiRzHt0v1EMNHGmqQWkemR+30t9Rfb6rBurMpZlHEKSQc7oXCcTpaJTUMCFxCQA6esL2TksZ7UFmjldU2xs2I7chOQ3+2M6oG4t2ni14u1iO020G1o0c7wcvZ07j1vnp8uzHTMY1T5trAiT8+UO8X/R71zTrcPQ8az2NrJxFfxrRDeQF0N5KlqUr8ALf2E0sRkO+/Ej2VNUZbCfMT9xRz14x3SuuX/IztX7iaEcEH/6pOeSNHC+OABVWy0/xNomQFJpHkdxOai96IAcNWmi7zFJWf1aas3Eaaz3b5U827kHySWdEBx9NgCV/7tEAutQb/AOb37af2GKqWA+hoxB7KlmGZhcLnGe1AXYylEd/OaPwfVwerpFxW7qF3Jc6MkwE96M=
+  api_key: $NPM_TOKEN
